@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* .button {
+    @apply text-sm text-white py-1 px-6 rounded-md;
+} */
