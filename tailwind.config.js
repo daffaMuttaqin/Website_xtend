@@ -13,7 +13,8 @@ module.exports = {
       },
       colors: {
         cyan: '#00FFFF',
-        dark_cyan: '#29B6B6'
+        dark_cyan: '#29B6B6',
+        green1: '#49D41F'
       },
       textColor:{
         purple: '#6860F5'
@@ -25,11 +26,21 @@ module.exports = {
         xs: '2px',
       }
     },
+    height: {
+      sm: '8px',
+      md: '16px',
+      lg: '24px',
+      xl: '48px',
+      half_hd: '800px',
+      hd: '968px',
+      fhd: '1080px',
+     },
   },
   variants: {
     extend: {
       display:['group-hover'],
       padding:['hover'],
+      rounded:['hover'],
     },
   },
   plugins: [],
