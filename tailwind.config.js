@@ -39,8 +39,10 @@ module.exports = {
   variants: {
     extend: {
       display:['group-hover'],
-      padding:['hover'],
-      rounded:['hover'],
+      padding:['group-hover,hover'],
+      rounded:['group-hover,hover'],
+      margin:['group-hover,hover'],
+      transitionDuration:['group-hover','focus'],
     },
   },
   plugins: [],

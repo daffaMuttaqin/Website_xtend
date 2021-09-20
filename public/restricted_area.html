@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html class="" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/tailwind.css" />
+    <title>Website</title> 
+</head>
+<body>
+
+    <div class="countainer mx-auto">
+
+        <div class="relative mx-auto items-center">
+            <div class=" h-half_hd w-14 bg-blue-700 text-center fixed">
+                <div class="flex flex-col">
+                    <div class="flex flex-row group relative">
+                        <a href="#">
+                            <button class="mt-8 px-3 py-3 text-white rounded-br-2xl rounded-tr-2xl group-hover:pr-36 group-hover:bg-blue-900 duration-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z" />
+                                    <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z" />
+                                </svg>
+                            </button>                         
+                        </a>
+                        <div class="absolute text-center text-xs bg-gray-300 rounded-br-2xl rounded-tr-2xl px-4 py-4 bottom-1 hidden group-hover:text-white group-hover:block group-hover:pl-20 group-hover:bg-transparent group-hover:pr-5 group-hover:duration-500">
+                            <a href="" class="block">Dashboard</a>
+                        </div>
+
+                    </div>
+                               
+                    <!-- Btn CCTV -->
+                    <div class="flex flex-row group relative">
+                        <a href="#">
+                            <button class="px-4 py-4 text-white rounded-br-2xl rounded-tr-2xl group-hover:pr-36 group-hover:bg-blue-900 duration-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z" />
+                                  </svg>
+                            </button>                         
+                        </a>
+                        <div class="absolute text-center text-xs bg-gray-300 rounded-br-2xl rounded-tr-2xl px-4 py-4 bottom-1 hidden group-hover:text-white group-hover:block group-hover:pl-20 group-hover:bg-transparent group-hover:pr-5 ">
+                            <a href="" class="block">CCTV</a>
+                        </div>
+
+                    </div>
+
+                    
+                    <!-- Btn Live View -->
+                    <div class="flex flex-row group relative">
+                        <a href="">
+                            <button class="px-4 py-4 text-white rounded-br-2xl rounded-tr-2xl group-hover:pr-36 group-hover:bg-blue-900 duration-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M4 5a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2h-1.586a1 1 0 01-.707-.293l-1.121-1.121A2 2 0 0011.172 3H8.828a2 2 0 00-1.414.586L6.293 4.707A1 1 0 015.586 5H4zm6 9a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+                                  </svg>
+                            </button>                         
+                        </a>
+                        <div class="absolute text-center text-xs bg-gray-300 rounded-br-2xl rounded-tr-2xl px-4 py-4 bottom-1 hidden group-hover:text-white group-hover:block group-hover:pl-20 group-hover:bg-transparent group-hover:pr-5 ">
+                            <a href="/public/index.html" class="block">LiveView</a>
+                        </div>
+                    </div>                    
+                    <!-- Btn Playback -->
+                    <div class="flex flex-row group relative">
+                        <a href="">
+                            <button class="px-4 py-4 text-white rounded-br-2xl rounded-tr-2xl group-hover:pr-36 group-hover:bg-blue-900 duration-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M8.445 14.832A1 1 0 0010 14v-2.798l5.445 3.63A1 1 0 0017 14V6a1 1 0 00-1.555-.832L10 8.798V6a1 1 0 00-1.555-.832l-6 4a1 1 0 000 1.664l6 4z" />
+                                  </svg>
+                            </button>                         
+                        </a>
+                        <div class="absolute text-center text-xs bg-gray-300 rounded-br-2xl rounded-tr-2xl px-4 py-4 bottom-1 hidden group-hover:text-white group-hover:block group-hover:pl-20 group-hover:bg-transparent group-hover:pr-5 ">
+                            <a href="/public/playback.html" class="block">Playback</a>
+                        </div>
+                    </div>                  
+                    <!-- Btn Face Recognition -->
+                    <div class="flex flex-row group relative">
+                        <a href="">
+                            <button class="px-4 py-4 text-white rounded-br-2xl rounded-tr-2xl group-hover:pr-36 group-hover:bg-blue-900 duration-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-.464 5.535a1 1 0 10-1.415-1.414 3 3 0 01-4.242 0 1 1 0 00-1.415 1.414 5 5 0 007.072 0z" clip-rule="evenodd" />
+                                  </svg>
+                            </button>                         
+                        </a>
+                        <div class="absolute text-center text-xs bg-gray-300 rounded-br-2xl rounded-tr-2xl px-4 py-4 bottom-0 hidden group-hover:text-white group-hover:block group-hover:pl-20 group-hover:bg-transparent group-hover:pr-5 ">
+                            <a href="/public/faceRecognation.html" class="block">Face Recognition</a>
+                        </div>
+                    </div>                    
+                    <!-- Btn People Counting -->                    
+                    <div class="flex flex-row group relative">
+                        <a href="">
+                            <button class="px-4 py-4 text-white rounded-br-2xl rounded-tr-2xl group-hover:pr-36 group-hover:bg-blue-900 duration-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
+                                  </svg>
+                            </button>                         
+                        </a>
+                        <div class="absolute text-center text-xs bg-gray-300 rounded-br-2xl rounded-tr-2xl px-4 py-4 bottom-0 hidden group-hover:text-white group-hover:block group-hover:pl-20 group-hover:bg-transparent group-hover:pr-5 ">
+                            <a href="/public/people_counting.html" class="block">People Counting</a>
+                        </div>
+                    </div>  
+                    <!-- Btn Restricted Area -->                    
+                    <div class="flex flex-row group relative">
+                        <a href="">
+                            <button class="px-4 py-4 text-white rounded-br-2xl rounded-tr-2xl bg-green1 group-hover:pr-36 group-hover:bg-green1 duration-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M13.477 14.89A6 6 0 015.11 6.524l8.367 8.368zm1.414-1.414L6.524 5.11a6 6 0 018.367 8.367zM18 10a8 8 0 11-16 0 8 8 0 0116 0z" clip-rule="evenodd" />
+                                  </svg>
+                            </button>                         
+                        </a>
+                        <div class="absolute text-center text-xs bg-gray-300 rounded-br-2xl rounded-tr-2xl px-4 py-4 hidden group-hover:text-white group-hover:block group-hover:pl-20 group-hover:bg-transparent group-hover:pr-5 ">
+                            <a href="/public/restricted_area.html" class="block">Restricted Area</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="flex ml-14 bg-white w-auto">
+            <!-- Body detection cameras -->
+            <div class="w-4/12 h-screen bg-white">
+                
+                <div class="flex w-auto pr-6 h-auto flex-col">
+
+                    <h1 class="flex flex-row mt-10 ml-5 text-sm font-semibold text-gray-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+                          </svg>
+                        Body detection cameras
+                    </h1>
+                    <form class="flex flex-row flex-wrap mt-5 mb-2 ml-5 border-2 border-gray-100 p-2 justify-between">
+                        <input type="text" class=" font-sans text-gray-200 bg-white outline-none text-xs" placeholder="Search area or code">
+                        <button class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                              </svg>
+                        </button>
+                    </form>
+
+                    <div class="flex flex-col w-auto h-auto mt-5 text-gray-500">
+                        <!-- Bagian Select All -->
+                        <div class="flex flex-row mt-5">
+                            <input type="checkbox" class="ml-5 cursor-pointer">
+                            <p class="text-gray-700 text-xs ml-5">Select All</p>
+                            <p class="text-gray-700 text-xs font-semibold ml-5 mb-3">Clear Section</p>
+
+                        </div>
+                        <!-- End Select All -->
+                        <div class="overflow-y-auto max-h-screen">
+                            <div class="flex flex-col mt-1">
+
+                                <!-- Tab pertama -->
+                                <div class="flex flex-row mt-5 items-center">
+                                    <p class="ml-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <input type="checkbox" class="ml-3 cursor-pointer">
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">Lantai 1 Gedung A <span class="text-gray-400">(22019)</span></p>                                    
+                                </div>
+                                <!-- End Tab Pertama -->
+
+                                <!-- Tab ke dua -->
+                                <div class="flex flex-row ml-5 mt-3 items-center">
+                                    <p class="ml-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <input type="checkbox" class="ml-3 cursor-pointer">
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">Lantai 1 Piantry<span class="text-gray-400">(22019)</span></p>
+                                </div>
+                                <!-- End Tab kedua -->
+
+                                <!-- Tab ketiga (1)-->
+                                <div class="flex flex-row ml-24 mt-3 items-center">                                    
+                                    <input type="checkbox" class="ml-3 cursor-pointer">
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">CCD-01-001</p>
+                                </div>
+                                <!-- End Tab ketiga (1) -->
+
+                                <!-- Tab ketiga (2)-->
+                                <div class="flex flex-row ml-24 mt-3 items-center">                                    
+                                    <input type="checkbox" class="ml-3 cursor-pointer">
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">CCD-01-001</p>
+                                </div>
+                                <!-- End Tab ketiga (2) -->
+
+                                <!-- Tab ketiga (3)-->
+                                <div class="flex flex-row ml-24 mt-3 items-center">                                    
+                                    <input type="checkbox" class="ml-3 cursor-pointer">
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">CCD-01-001</p>
+                                </div>
+                                <!-- End Tab ketiga (3) -->
+
+                                <!-- Tab ketiga (4)-->
+                                <div class="flex flex-row ml-24 mt-3 items-center">                                    
+                                    <input type="checkbox" class="ml-3 cursor-pointer">
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">CCD-01-001</p>
+                                </div>
+                                <!-- End Tab ketiga (4) -->
+
+                                <!-- Tab ketiga (5)-->
+                                <div class="flex flex-row ml-24 mt-3 items-center">                                    
+                                    <input type="checkbox" class="ml-3 cursor-pointer">
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">PTZ-01-004</p>
+                                </div>
+                                <!-- End Tab ketiga (5) -->
+
+                                <!-- 2 -->
+                                <!-- Tab ke dua -->
+                                <div class="flex flex-row ml-5 mt-5 items-center">
+                                    <p class="ml-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <input type="checkbox" class="ml-3 cursor-pointer">
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">Lantai 1 Piantry<span class="text-gray-400">(22019)</span></p>
+                                </div>
+                                <!-- End Tab kedua -->
+
+                                <!-- Tab ketiga (1)-->
+                                <div class="flex flex-row ml-24 mt-3 items-center">                                    
+                                    <input type="checkbox" class="ml-3 cursor-pointer">
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">CCD-01-001</p>
+                                </div>
+                                <!-- End Tab ketiga (1) -->
+
+                                <!-- Tab ketiga (2)-->
+                                <div class="flex flex-row ml-24 mt-3 items-center">                                    
+                                    <input type="checkbox" class="ml-3 cursor-pointer">
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">CCD-01-001</p>
+                                </div>
+                                <!-- End Tab ketiga (2) -->
+
+                                <!-- Tab ketiga (3)-->
+                                <div class="flex flex-row ml-24 mt-3 items-center">                                    
+                                    <input type="checkbox" class="ml-3 cursor-pointer">
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">CCD-01-001</p>
+                                </div>
+                                <!-- End Tab ketiga (3) -->
+
+                                <!-- Tab ketiga (4)-->
+                                <div class="flex flex-row ml-24 mt-3 items-center">                                    
+                                    <input type="checkbox" class="ml-3 cursor-pointer">
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">CCD-01-001</p>
+                                </div>
+                                <!-- End Tab ketiga (4) -->
+
+                                <!-- Tab ketiga (5)-->
+                                <div class="flex flex-row ml-24 mt-3 items-center">                                    
+                                    <input type="checkbox" class="ml-3 cursor-pointer">
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">PTZ-01-004</p>
+                                </div>
+                                <!-- End Tab ketiga (5) -->    
+
+                                <!-- 3 -->
+                                <!-- Tab ke dua -->
+                                <div class="flex flex-row ml-5 mt-5 items-center">
+                                    <p class="ml-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <input type="checkbox" class="ml-3 cursor-pointer">
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">Lantai 1 Piantry<span class="text-gray-400">(22019)</span></p>
+                                </div>
+                                <!-- End Tab kedua -->
+
+                                <!-- Tab ketiga (1)-->
+                                <div class="flex flex-row ml-24 mt-3 items-center">                                    
+                                    <input type="checkbox" class="ml-3 cursor-pointer">
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">CCD-01-001</p>
+                                </div>
+                                <!-- End Tab ketiga (1) -->
+
+                                <!-- Tab ketiga (2)-->
+                                <div class="flex flex-row ml-24 mt-3 items-center">                                    
+                                    <input type="checkbox" class="ml-3 cursor-pointer">
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">CCD-01-001</p>
+                                </div>
+                                <!-- End Tab ketiga (2) -->
+
+                                <!-- Tab ketiga (3)-->
+                                <div class="flex flex-row ml-24 mt-3 items-center">                                    
+                                    <input type="checkbox" class="ml-3 cursor-pointer">
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">CCD-01-001</p>
+                                </div>
+                                <!-- End Tab ketiga (3) -->
+
+                                <!-- Tab ketiga (4)-->
+                                <div class="flex flex-row ml-24 mt-3 items-center">                                    
+                                    <input type="checkbox" class="ml-3 cursor-pointer">
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">CCD-01-001</p>
+                                </div>
+                                <!-- End Tab ketiga (4) -->
+
+                                <!-- Tab ketiga (5)-->
+                                <div class="flex flex-row ml-24 mt-3 items-center">                                    
+                                    <input type="checkbox" class="ml-3 cursor-pointer">
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">PTZ-01-004</p>
+                                </div>
+                                <!-- End Tab ketiga (5) -->   
+
+                                <!-- Tab pertama bagian ke 2 -->
+                                <!-- Tab pertama -->
+                                <div class="flex flex-row mt-5 items-center">
+                                    <p class="ml-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <input type="checkbox" class="ml-3 cursor-pointer">
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">Lantai 1 Gedung A <span class="text-gray-400">(22019)</span></p>                                    
+                                </div>
+                                <!-- End Tab Pertama -->
+
+                                <!-- Tab ke dua -->
+                                <div class="flex flex-row ml-5 mt-3 items-center">
+                                    <p class="ml-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <input type="checkbox" class="ml-3 cursor-pointer">
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-1">Lantai 1 Piantry<span class="text-gray-400">(22019)</span></p>
+                                </div>
+                                <!-- End Tab kedua -->
+
+                                <!-- Tab ketiga (1)-->
+                                <div class="flex flex-row ml-24 mt-3 items-center">                                    
+                                    <input type="checkbox" class="ml-3 cursor-pointer">
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">CCD-01-001</p>
+                                </div>
+                                <!-- End Tab ketiga (1) -->
+
+                                <!-- Tab ketiga (2)-->
+                                <div class="flex flex-row ml-24 mt-3 items-center">                                    
+                                    <input type="checkbox" class="ml-3 cursor-pointer">
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">CCD-01-001</p>
+                                </div>
+                                <!-- End Tab ketiga (2) -->
+
+                                <!-- Tab ketiga (3)-->
+                                <div class="flex flex-row ml-24 mt-3 items-center">                                    
+                                    <input type="checkbox" class="ml-3 cursor-pointer">
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">CCD-01-001</p>
+                                </div>
+                                <!-- End Tab ketiga (3) -->
+
+                                <!-- Tab ketiga (4)-->
+                                <div class="flex flex-row ml-24 mt-3 items-center">                                    
+                                    <input type="checkbox" class="ml-3 cursor-pointer">
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">CCD-01-001</p>
+                                </div>
+                                <!-- End Tab ketiga (4) -->
+
+                                <!-- Tab ketiga (5)-->
+                                <div class="flex flex-row ml-24 mt-3 items-center">                                    
+                                    <input type="checkbox" class="ml-3 cursor-pointer">
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">PTZ-01-004</p>
+                                </div>
+                                <!-- End Tab ketiga (5) -->
+
+                                <!-- 2 -->
+                                <!-- Tab ke dua -->
+                                <div class="flex flex-row ml-5 mt-5 items-center">
+                                    <p class="ml-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <input type="checkbox" class="ml-3 cursor-pointer">
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">Lantai 1 Piantry<span class="text-gray-400">(22019)</span></p>
+                                </div>
+                                <!-- End Tab kedua -->
+
+                                <!-- Tab ketiga (1)-->
+                                <div class="flex flex-row ml-24 mt-3 items-center">                                    
+                                    <input type="checkbox" class="ml-3 cursor-pointer">
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">CCD-01-001</p>
+                                </div>
+                                <!-- End Tab ketiga (1) -->
+
+                                <!-- Tab ketiga (2)-->
+                                <div class="flex flex-row ml-24 mt-3 items-center">                                    
+                                    <input type="checkbox" class="ml-3 cursor-pointer">
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">CCD-01-001</p>
+                                </div>
+                                <!-- End Tab ketiga (2) -->
+
+                                <!-- Tab ketiga (3)-->
+                                <div class="flex flex-row ml-24 mt-3 items-center">                                    
+                                    <input type="checkbox" class="ml-3 cursor-pointer">
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">CCD-01-001</p>
+                                </div>
+                                <!-- End Tab ketiga (3) -->
+
+                                <!-- Tab ketiga (4)-->
+                                <div class="flex flex-row ml-24 mt-3 items-center">                                    
+                                    <input type="checkbox" class="ml-3 cursor-pointer">
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">CCD-01-001</p>
+                                </div>
+                                <!-- End Tab ketiga (4) -->
+
+                                <!-- Tab ketiga (5)-->
+                                <div class="flex flex-row ml-24 mt-3 items-center">                                    
+                                    <input type="checkbox" class="ml-3 cursor-pointer">
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">PTZ-01-004</p>
+                                </div>
+                                <!-- End Tab ketiga (5) -->    
+
+                                <!-- 3 -->
+                                <!-- Tab ke dua -->
+                                <div class="flex flex-row ml-5 mt-5 items-center">
+                                    <p class="ml-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <input type="checkbox" class="ml-3 cursor-pointer">
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">Lantai 1 Piantry<span class="text-gray-400">(22019)</span></p>
+                                </div>
+                                <!-- End Tab kedua -->
+
+                                <!-- Tab ketiga (1)-->
+                                <div class="flex flex-row ml-24 mt-3 items-center">                                    
+                                    <input type="checkbox" class="ml-3 cursor-pointer">
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">CCD-01-001</p>
+                                </div>
+                                <!-- End Tab ketiga (1) -->
+
+                                <!-- Tab ketiga (2)-->
+                                <div class="flex flex-row ml-24 mt-3 items-center">                                    
+                                    <input type="checkbox" class="ml-3 cursor-pointer">
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">CCD-01-001</p>
+                                </div>
+                                <!-- End Tab ketiga (2) -->
+
+                                <!-- Tab ketiga (3)-->
+                                <div class="flex flex-row ml-24 mt-3 items-center">                                    
+                                    <input type="checkbox" class="ml-3 cursor-pointer">
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">CCD-01-001</p>
+                                </div>
+                                <!-- End Tab ketiga (3) -->
+
+                                <!-- Tab ketiga (4)-->
+                                <div class="flex flex-row ml-24 mt-3 items-center">                                    
+                                    <input type="checkbox" class="ml-3 cursor-pointer">
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">CCD-01-001</p>
+                                </div>
+                                <!-- End Tab ketiga (4) -->
+
+                                <!-- Tab ketiga (5)-->
+                                <div class="flex flex-row ml-24 mt-3 items-center">                                    
+                                    <input type="checkbox" class="ml-3 cursor-pointer">
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">PTZ-01-004</p>
+                                </div>
+                                <!-- End Tab ketiga (5) -->   
+                            </div>
+
+                        </div>
+                    </div>
+    
+                </div>
+
+            </div>            
+            <div class=" w-full h-32 justify-between"> 
+                <div class="flex w-auto justify-between bg-gray-200">
+                    <div class="flex flex-col ml-6 mt-8 mb-8">
+                        <h1 class="text-gray-600 font-semibold text-xl">Restricted Area</h1>
+                        <small class="text-gray-400 font-semibold">Kantor Gubernur Sumatera Utara</small>
+                    </div >
+                    
+                    <div class="flex flex-col justify-between-xl">
+    
+                        <div class="flex-row text-right mr-3 h-xl">
+                            <!-- Alarm -->
+                            <button class="text-white text-center bg-red-600 px-3 py-1 hover:pb-5  duration-300 rounded-br-md rounded-bl-md">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                                  </svg>
+                            </button>
+    
+                            <button class="text-white text-center bg-yellow-400 px-3 py-1 hover:pb-5  duration-300 rounded-br-md rounded-bl-md">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3"  viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
+                                </svg>
+                            </button>                           
+    
+                        </div>                       
+    
+                        
+                        
+                    </div>
+                </div>   
+                <div class="h-screen bg-gray-50">
+                    <div class="flex justify-between ml-5">
+                        <a href="#" class="flex text-gray-700 bg-white rounded-lg mt-5 mb-2 px-5 py-2 text-xs font-semibold items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z" />
+                              </svg>
+                            Filter
+                        </a>
+
+                        <div class="flex font-semibold text-gray-700 pr-2 text-xs items-center">
+                            <p class="pr-5">Trigger this week</p>
+
+                            <button class="bg-blue-600 text-xs text-white px-3 py-3 rounded-lg font-semibold">
+                                180
+                            </button>
+                        </div>
+    
+                        
+    
+                    </div>
+                    <div class="w-auto ml-5 mt-5 pt-5 rounded-lg bg-white">
+                        <table style="width: 100%; padding-bottom: 15pt;" class="text-left ml-5  ">
+                            <tr class="text-gray-600 my-5 pb-10 border-b-2 border-black border-opacity-50">
+                                <th style="width: 40%;" class="py-5">Date/Time</th>
+                                <th style="width: 40%;">Capture</th>
+    
+                            </tr>
+                            <!-- Data 1 -->
+                            <tr class="text-sm text-gray-700">
+                                <td class="text-blue-500 border-b-2">12 Jan 2021 09:33 PM
+                                <td class="py-4 border-b-2">
+                                    <button class="rounded-full bg-gray-200 text-gray-400 p-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M4 5a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2h-1.586a1 1 0 01-.707-.293l-1.121-1.121A2 2 0 0011.172 3H8.828a2 2 0 00-1.414.586L6.293 4.707A1 1 0 015.586 5H4zm6 9a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+                                      </svg>
+                                </button>
+                                </td>
+                            </tr>
+    
+                            <!-- Data 2 -->
+                            <tr class="text-sm text-gray-700">
+                                <td class="text-blue-500 border-b-2">12 Jan 2021 09:33 PM
+                                <td class="py-4 border-b-2">
+                                    <button class="rounded-full bg-gray-200 text-gray-400 p-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M4 5a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2h-1.586a1 1 0 01-.707-.293l-1.121-1.121A2 2 0 0011.172 3H8.828a2 2 0 00-1.414.586L6.293 4.707A1 1 0 015.586 5H4zm6 9a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+                                      </svg>
+                                </button>
+                                </td>
+                            </tr>
+    
+                            <!-- Data 3 -->
+                            <tr class="text-sm text-gray-700">
+                                <td class="text-blue-500 border-b-2">12 Jan 2021 09:33 PM
+                                <td class="py-4 border-b-2">
+                                    <button class="rounded-full bg-gray-200 text-gray-400 p-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M4 5a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2h-1.586a1 1 0 01-.707-.293l-1.121-1.121A2 2 0 0011.172 3H8.828a2 2 0 00-1.414.586L6.293 4.707A1 1 0 015.586 5H4zm6 9a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+                                      </svg>
+                                </button>
+                                </td>
+                            </tr>
+    
+                            <!-- Data 4 -->
+                            <tr class="text-sm text-gray-700">
+                                <td class="text-blue-500 border-b-2">12 Jan 2021 09:33 PM
+                                <td class="py-4 border-b-2">
+                                    <button class="rounded-full bg-gray-200 text-gray-400 p-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M4 5a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2h-1.586a1 1 0 01-.707-.293l-1.121-1.121A2 2 0 0011.172 3H8.828a2 2 0 00-1.414.586L6.293 4.707A1 1 0 015.586 5H4zm6 9a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+                                      </svg>
+                                </button>
+                                </td>
+                            </tr>
+    
+                            <!-- Data 5 -->
+                            <tr class="text-sm text-gray-700">
+                                <td class="text-blue-500 border-b-2">12 Jan 2021 09:33 PM
+                                <td class="py-4 border-b-2">
+                                    <button class="rounded-full bg-gray-200 text-gray-400 p-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M4 5a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2h-1.586a1 1 0 01-.707-.293l-1.121-1.121A2 2 0 0011.172 3H8.828a2 2 0 00-1.414.586L6.293 4.707A1 1 0 015.586 5H4zm6 9a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+                                      </svg>
+                                </button>
+                                </td>
+                            </tr>
+    
+                            <!-- Data 6 -->
+                            <tr class="text-sm text-gray-700">
+                                <td class="text-blue-500 border-b-2">12 Jan 2021 09:33 PM
+                                <td class="py-4 border-b-2">
+                                    <button class="rounded-full bg-gray-200 text-gray-400 p-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M4 5a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2h-1.586a1 1 0 01-.707-.293l-1.121-1.121A2 2 0 0011.172 3H8.828a2 2 0 00-1.414.586L6.293 4.707A1 1 0 015.586 5H4zm6 9a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+                                      </svg>
+                                </button>
+                                </td>
+                            </tr>
+    
+                            <!-- Data 7 -->
+                            <tr class="text-sm text-gray-700">
+                                <td class="text-blue-500 border-b-2">12 Jan 2021 09:33 PM</td>
+                                <td class="py-4 border-b-2">
+                                    <button class="rounded-full bg-gray-200 text-gray-400 p-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M4 5a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2h-1.586a1 1 0 01-.707-.293l-1.121-1.121A2 2 0 0011.172 3H8.828a2 2 0 00-1.414.586L6.293 4.707A1 1 0 015.586 5H4zm6 9a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+                                      </svg>
+                                </button>
+                                </td>
+                            </tr>
+    
+                        </table>
+    
+                        <div class="flex justify-end text-xs items-center text-gray-500 my-5">
+                            <p class="flex pr-20">Rows per page : 7 <span class="text-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                  </svg>
+                            </span> </p>
+    
+                            <p class="flex mr-5">1 - 5 of 10 
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 mx-3" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                  </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 mx-3" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                  </svg>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+            
+        </div>
+    </div>
+
+</body>
+</html>
