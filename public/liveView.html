@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html class="" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/tailwind.css" />
+    <title>Website</title> 
+</head>
+<body>
+
+    <div class="countainer mx-auto">
+
+        <div class="relative mx-auto items-center">
+            <div class=" h-half_hd w-14 bg-blue-700 text-center fixed">
+                <div class="flex flex-col">
+                    <div class="flex flex-row group relative">
+                        <a href="#">
+                            <button class="mt-8 px-3 py-3 text-white rounded-br-2xl rounded-tr-2xl group-hover:pr-36 group-hover:bg-blue-900 duration-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z" />
+                                    <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z" />
+                                </svg>
+                            </button>                         
+                        </a>
+                        <div class="absolute text-center text-xs bg-gray-300 rounded-br-2xl rounded-tr-2xl px-4 py-4 bottom-1 hidden group-hover:text-white group-hover:block group-hover:pl-20 group-hover:bg-transparent group-hover:pr-5 group-hover:duration-500">
+                            <a href="" class="block">Dashboard</a>
+                        </div>
+
+                    </div>
+                               
+                    <!-- Btn CCTV -->
+                    <div class="flex flex-row group relative">
+                        <a href="#">
+                            <button class="px-4 py-4 text-white rounded-br-2xl rounded-tr-2xl group-hover:pr-36 group-hover:bg-blue-900 duration-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z" />
+                                  </svg>
+                            </button>                         
+                        </a>
+                        <div class="absolute text-center text-xs bg-gray-300 rounded-br-2xl rounded-tr-2xl px-4 py-4 bottom-1 hidden group-hover:text-white group-hover:block group-hover:pl-20 group-hover:bg-transparent group-hover:pr-5 ">
+                            <a href="" class="block">CCTV</a>
+                        </div>
+
+                    </div>
+
+                    
+                    <!-- Btn Live View -->
+                    <div class="flex flex-row group relative">
+                        <a href="">
+                            <button class="px-4 py-4 text-white rounded-br-2xl rounded-tr-2xl bg-green1 group-hover:pr-36 group-hover:bg-green1 duration-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M4 5a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2h-1.586a1 1 0 01-.707-.293l-1.121-1.121A2 2 0 0011.172 3H8.828a2 2 0 00-1.414.586L6.293 4.707A1 1 0 015.586 5H4zm6 9a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+                                  </svg>
+                            </button>                         
+                        </a>
+                        <div class="absolute text-center text-xs bg-gray-300 rounded-br-2xl rounded-tr-2xl px-4 py-4 bottom-1 hidden group-hover:text-white group-hover:block group-hover:pl-20 group-hover:bg-transparent group-hover:pr-5 ">
+                            <a href="/public/liveView.html" class="block">LiveView</a>
+                        </div>
+                    </div>                    
+                    <!-- Btn Playback -->
+                    <div class="flex flex-row group relative">
+                        <a href="">
+                            <button class="px-4 py-4 text-white rounded-br-2xl rounded-tr-2xl group-hover:pr-36 group-hover:bg-blue-900 duration-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M8.445 14.832A1 1 0 0010 14v-2.798l5.445 3.63A1 1 0 0017 14V6a1 1 0 00-1.555-.832L10 8.798V6a1 1 0 00-1.555-.832l-6 4a1 1 0 000 1.664l6 4z" />
+                                  </svg>
+                            </button>                         
+                        </a>
+                        <div class="absolute text-center text-xs bg-gray-300 rounded-br-2xl rounded-tr-2xl px-4 py-4 bottom-1 hidden group-hover:text-white group-hover:block group-hover:pl-20 group-hover:bg-transparent group-hover:pr-5 ">
+                            <a href="/public/playback.html" class="block">Playback</a>
+                        </div>
+                    </div>                  
+                    <!-- Btn Face Recognition -->
+                    <div class="flex flex-row group relative">
+                        <a href="">
+                            <button class="px-4 py-4 text-white rounded-br-2xl rounded-tr-2xl group-hover:pr-36 group-hover:bg-blue-900 duration-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-.464 5.535a1 1 0 10-1.415-1.414 3 3 0 01-4.242 0 1 1 0 00-1.415 1.414 5 5 0 007.072 0z" clip-rule="evenodd" />
+                                  </svg>
+                            </button>                         
+                        </a>
+                        <div class="absolute text-center text-xs bg-gray-300 rounded-br-2xl rounded-tr-2xl px-4 py-4 bottom-0 hidden group-hover:text-white group-hover:block group-hover:pl-20 group-hover:bg-transparent group-hover:pr-5 ">
+                            <a href="/public/faceRecognation.html" class="block">Face Recognition</a>
+                        </div>
+                    </div>                    
+                    <!-- Btn People Counting -->                    
+                    <div class="flex flex-row group relative">
+                        <a href="">
+                            <button class="px-4 py-4 text-white rounded-br-2xl rounded-tr-2xl group-hover:pr-36 group-hover:bg-blue-900 duration-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
+                                  </svg>
+                            </button>                         
+                        </a>
+                        <div class="absolute text-center text-xs bg-gray-300 rounded-br-2xl rounded-tr-2xl px-4 py-4 bottom-0 hidden group-hover:text-white group-hover:block group-hover:pl-20 group-hover:bg-transparent group-hover:pr-5 ">
+                            <a href="/public/people_counting.html" class="block">People Counting</a>
+                        </div>
+                    </div>  
+                    <!-- Btn Restricted Area -->                    
+                    <div class="flex flex-row group relative">
+                        <a href="">
+                            <button class="px-4 py-4 text-white rounded-br-2xl rounded-tr-2xl group-hover:pr-36 group-hover:bg-blue-900 duration-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M13.477 14.89A6 6 0 015.11 6.524l8.367 8.368zm1.414-1.414L6.524 5.11a6 6 0 018.367 8.367zM18 10a8 8 0 11-16 0 8 8 0 0116 0z" clip-rule="evenodd" />
+                                  </svg>
+                            </button>                         
+                        </a>
+                        <div class="absolute text-center text-xs bg-gray-300 rounded-br-2xl rounded-tr-2xl px-4 py-4 hidden group-hover:text-white group-hover:block group-hover:pl-20 group-hover:bg-transparent group-hover:pr-5 ">
+                            <a href="/public/restricted_area.html" class="block">Restricted Area</a>
+                        </div>
+                    </div>
+                    <!-- Btn Air Conditioner -->                    
+                    <div class="flex flex-row group relative">
+                        <a href="">
+                            <button class="px-4 py-4 text-white rounded-br-2xl rounded-tr-2xl group-hover:pr-36 group-hover:bg-blue-900 duration-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm-1 9v-1h5v2H5a1 1 0 01-1-1zm7 1h4a1 1 0 001-1v-1h-5v2zm0-4h5V8h-5v2zM9 8H4v2h5V8z" clip-rule="evenodd" />
+                                  </svg>
+                            </button>                         
+                        </a>
+                        <div class="absolute text-center text-xs bg-gray-300 rounded-br-2xl rounded-tr-2xl px-4 py-4 hidden group-hover:text-white group-hover:block group-hover:pl-20 group-hover:bg-transparent group-hover:pr-5 ">
+                            <a href="#" class="block">Air Conditioner</a>
+                        </div>
+                    </div>
+                    <!-- Btn Elevator -->                    
+                    <div class="flex flex-row group relative">
+                        <a href="">
+                            <button class="px-4 py-4 text-white rounded-br-2xl rounded-tr-2xl  group-hover:pr-36 group-hover:bg-blue-900 duration-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M5 12a1 1 0 102 0V6.414l1.293 1.293a1 1 0 001.414-1.414l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L5 6.414V12zM15 8a1 1 0 10-2 0v5.586l-1.293-1.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L15 13.586V8z" />
+                                  </svg>
+                            </button>                         
+                        </a>
+                        <div class="absolute text-center text-xs bg-gray-300 rounded-br-2xl rounded-tr-2xl px-4 py-4 bottom-1 hidden group-hover:text-white group-hover:block group-hover:pl-20 group-hover:bg-transparent group-hover:pr-5 ">
+                            <a href="/public/elevator.html" class="block">Elevator</a>
+                        </div>
+                    </div>
+                    <!-- Btn Parking -->
+                    <div class="flex flex-row group relative">
+                        <a href="">
+                            <button class="px-4 py-4 text-white rounded-br-2xl rounded-tr-2xl group-hover:pr-36 group-hover:bg-blue-900 duration-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                                    <path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1v-5a1 1 0 00-.293-.707l-2-2A1 1 0 0015 7h-1z" />
+                                </svg>
+                            </button>                         
+                        </a>
+                        <div class="absolute text-center text-xs bg-gray-300 rounded-br-2xl bottom-1 rounded-tr-2xl px-4 py-4 hidden group-hover:text-white group-hover:block group-hover:pl-20 group-hover:bg-transparent group-hover:pr-5 ">
+                            <a href="/public/parking.html" class="block">Parking</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="flex ml-14 bg-white w-auto">
+            
+            <!-- Body detection cameras -->
+            <div id="hidden_menu" class="w-4/12 ml-4 h-screen bg-white">
+                
+                <div class="flex w-auto pr-6 h-auto flex-col">
+
+                    <div class="flex flex-row mt-10 ml-5">
+                        <button id="btn_hide">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+                              </svg>
+                        </button>
+                        <h1 class="flex flex-row text-sm font-semibold text-gray-600">                        
+                            Preset, area & camera
+                        </h1>
+                    </div>
+
+                    <!-- <form class="flex flex-row flex-wrap mt-5 mb-2 ml-5 border-2 border-gray-100 p-2 justify-between">
+                        <input type="text" class=" font-sans text-gray-200 bg-white outline-none text-xs" placeholder="Search area or code">
+                        <button class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                              </svg>
+                        </button>
+                    </form> -->
+
+                    <div class="flex flex-col w-auto h-auto mt-5 text-gray-500">
+
+                        <div class="flex">
+                            <button class="text-xs font-semibold ml-8 border-b-2 border-blue-600 py-2 px-3">
+                                Preset
+                            </button>
+
+                            <button class="text-xs text-gray-400 font-semibold ml-8 border-b-2 border-transparent py-2 px-3">
+                                Area
+                            </button>
+
+                        </div>
+                        
+                        <div class="overflow-y-auto h-screen">
+                            <div class="flex flex-col mt-1">                               
+                                <!-- Tab ke dua -->
+                                <div class="flex flex-row mt-3 items-center">
+                                    <p class="ml-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-400 text-xs ml-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                            <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm">Preset 01</span></p>
+                                </div>
+                                <!-- End Tab kedua -->
+
+                                <!-- Tab ketiga (1)-->
+                                <div class="flex flex-row ml-16 mt-5 items-center">                                    
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">CCD-01-001</p>
+                                </div>
+                                <!-- End Tab ketiga (1) -->
+
+                                <!-- Tab ketiga (2)-->
+                                <div class="flex flex-row ml-16 mt-3 items-center">                                    
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">CCD-01-001</p>
+                                </div>
+                                <!-- End Tab ketiga (2) -->
+
+                                <!-- Tab ketiga (3)-->
+                                <div class="flex flex-row ml-16 mt-3 items-center">                                    
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">CCD-01-001</p>
+                                </div>
+                                <!-- End Tab ketiga (3) -->
+
+                                <!-- Tab ketiga (4)-->
+                                <div class="flex flex-row ml-16 mt-3 items-center">                                    
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">CCD-01-001</p>
+                                </div>
+                                <!-- End Tab ketiga (4) -->
+
+                                <!-- Tab ketiga (5)-->
+                                <div class="flex flex-row ml-16 mt-3 items-center">                                    
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">PTZ-01-004</p>
+                                </div>
+                                <!-- End Tab ketiga (5) -->
+
+                                <!-- 2 -->
+                                <div class="flex flex-row mt-5 items-center">
+                                    <p class="ml-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-400 text-xs ml-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                            <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm">Preset 02</span></p>
+                                </div>
+                                <!-- End Tab kedua -->
+
+                                <!-- Tab ketiga (1)-->
+                                <div class="flex flex-row ml-16 mt-5 items-center">                                    
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">CCD-01-001</p>
+                                </div>
+                                <!-- End Tab ketiga (1) -->
+
+                                <!-- Tab ketiga (2)-->
+                                <div class="flex flex-row ml-16 mt-3 items-center">                                    
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">CCD-01-001</p>
+                                </div>
+                                <!-- End Tab ketiga (2) -->
+
+                                <!-- Tab ketiga (3)-->
+                                <div class="flex flex-row ml-16 mt-3 items-center">                                    
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">CCD-01-001</p>
+                                </div>
+                                <!-- End Tab ketiga (3) -->
+
+                                <!-- Tab ketiga (4)-->
+                                <div class="flex flex-row ml-16 mt-3 items-center">                                    
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">CCD-01-001</p>
+                                </div>
+                                <!-- End Tab ketiga (4) -->
+
+                                <!-- Tab ketiga (5)-->
+                                <div class="flex flex-row ml-16 mt-3 items-center">                                    
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">PTZ-01-004</p>
+                                </div>
+                                <!-- End Tab ketiga (5) -->
+
+                                <!-- 3 -->
+                                <div class="flex flex-row mt-5 items-center">
+                                    <p class="ml-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-400 text-xs ml-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                            <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm">Preset 03</span></p>
+                                </div>
+                                <!-- End Tab kedua -->
+
+                                <!-- Tab ketiga (1)-->
+                                <div class="flex flex-row ml-16 mt-5 items-center">                                    
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">CCD-01-001</p>
+                                </div>
+                                <!-- End Tab ketiga (1) -->
+
+                                <!-- Tab ketiga (2)-->
+                                <div class="flex flex-row ml-16 mt-3 items-center">                                    
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">CCD-01-001</p>
+                                </div>
+                                <!-- End Tab ketiga (2) -->
+
+                                <!-- Tab ketiga (3)-->
+                                <div class="flex flex-row ml-16 mt-3 items-center">                                    
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">CCD-01-001</p>
+                                </div>
+                                <!-- End Tab ketiga (3) -->
+
+                                <!-- Tab ketiga (4)-->
+                                <div class="flex flex-row ml-16 mt-3 items-center">                                    
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">CCD-01-001</p>
+                                </div>
+                                <!-- End Tab ketiga (4) -->
+
+                                <!-- Tab ketiga (5)-->
+                                <div class="flex flex-row ml-16 mt-3 items-center">                                    
+                                    <p class="text-gray-400 text-xs ml-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                                          </svg>
+                                    </p>
+                                    <p class="text-gray-700 text-sm ml-2">PTZ-01-004</p>
+                                </div>
+                                <!-- End Tab ketiga (5) -->
+
+                            </div>
+
+                        </div>
+                    </div>
+    
+                </div>
+
+            </div>
+            
+                        
+            <div class=" w-full h-32 justify-between"> 
+                <div class="flex w-auto justify-between items-center bg-gray-200">
+                    <div class="flex w-auto flex-row pr-1  items-center">
+                        <!-- btn_show menu -->
+                        <button type="button" id="btn_show" class="flex flex-row p-1 mt-8 mb-8 rounded-tr-full hidden rounded-br-full bg-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-7 text-gray-700" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                              </svg>
+                        </button>
+
+                        <!-- Script untuk hide dan unhide menu dikiri -->
+                        <script>
+                            let modal = document.getElementById("hidden_menu");
+                            let modal2 = document.getElementById("hidden_menu");
+                            let btn_hide = document.getElementById("btn_hide");
+                            let btn_show = document.getElementById("btn_show");
+
+                            btn_hide.onclick = function(){
+                                modal.classList.add('hidden');
+                                btn_show.classList.remove('hidden');
+                                
+                            }
+
+                            btn_show.onclick = function(){
+                                modal2.classList.remove('hidden');
+                                btn_show.classList.add('hidden');
+                            }
+                    </script>   
+
+                        <div class="flex flex-col ml-4 mt-8 mb-8">
+                            <h1 class="text-gray-600 font-semibold text-xl">Live View</h1>
+                            <small class="text-gray-400 font-semibold">Kantor Gubernur Sumatera Utara</small>
+                        </div >
+                    </div >
+
+                    <div class="flex text-gray-600 mt-5">
+                        <!-- Btn Play -->
+                        <button class=" pr-5 border-r-2 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                              </svg>
+                        </button>
+                        <!-- Btn Record -->
+                        <button title="Record" class="px-4 py-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8 7a1 1 0 00-1 1v4a1 1 0 001 1h4a1 1 0 001-1V8a1 1 0 00-1-1H8z" clip-rule="evenodd" />
+                              </svg>
+                        </button>
+                        <!-- Btn Media -->
+                        <button class="pr-5 py-1 border-r-2 cursor-default">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm3 2h6v4H7V5zm8 8v2h1v-2h-1zm-2-2H7v4h6v-4zm2 0h1V9h-1v2zm1-4V5h-1v2h1zM5 5v2H4V5h1zm0 4H4v2h1V9zm-1 4h1v2H4v-2z" clip-rule="evenodd" />
+                              </svg>
+                        </button>
+                        <!-- Btn Volume-->
+                        <button class="flex px-4 py-1 ml-1 rounded-lg hover:bg-gray-300 duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z" clip-rule="evenodd" />
+                              </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <!-- Btn Mic-->
+                        <button class="flex px-2 py-1 text-white text-sm bg-gray-600 rounded-lg items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.93A7.001 7.001 0 0017 8a1 1 0 10-2 0A5 5 0 015 8a1 1 0 00-2 0 7.001 7.001 0 006 6.93V17H6a1 1 0 100 2h8a1 1 0 100-2h-3v-2.07z" clip-rule="evenodd" />
+                              </svg>
+                            <small class="text-white pl-1">Speak</small>
+                        </button>
+                    </div>                                       
+                    
+                    <div class="flex flex-col justify-between">
+
+                        <div class="flex-row mr-3 text-right h-xl">
+                            <!-- Alarm -->
+                            <button class="text-white text-center bg-red-600 px-3 py-1 hover:pb-5  duration-300 rounded-br-md rounded-bl-md">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                                  </svg>
+                            </button>
+
+                            <button class="text-white text-center bg-yellow-400 px-3 py-1 hover:pb-5  duration-300 rounded-br-md rounded-bl-md">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3"  viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
+                                </svg>
+                            </button>                           
+
+                        </div>
+                        <div class="flex h-xl">
+                            <!-- Btn Controller -->
+                            <button class="flex px-3 text-gray-600 items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm-1 9v-1h5v2H5a1 1 0 01-1-1zm7 1h4a1 1 0 001-1v-1h-5v2zm0-4h5V8h-5v2zM9 8H4v2h5V8z" clip-rule="evenodd" />
+                                  </svg>
+                                  <small class="text-xs">Layout</small>
+                            </button>
+                            <!-- Btn Layout -->
+                            <button class="flex px-3 text-gray-600 items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-2 0c0 .993-.241 1.929-.668 2.754l-1.524-1.525a3.997 3.997 0 00.078-2.183l1.562-1.562C15.802 8.249 16 9.1 16 10zm-5.165 3.913l1.58 1.58A5.98 5.98 0 0110 16a5.976 5.976 0 01-2.516-.552l1.562-1.562a4.006 4.006 0 001.789.027zm-4.677-2.796a4.002 4.002 0 01-.041-2.08l-.08.08-1.53-1.533A5.98 5.98 0 004 10c0 .954.223 1.856.619 2.657l1.54-1.54zm1.088-6.45A5.974 5.974 0 0110 4c.954 0 1.856.223 2.657.619l-1.54 1.54a4.002 4.002 0 00-2.346.033L7.246 4.668zM12 10a2 2 0 11-4 0 2 2 0 014 0z" clip-rule="evenodd" />
+                                      </svg>
+                                      <small class="text-xs ">Controller</small>
+                            </button>
+
+                        </div>                  
+
+                        
+                        
+                    </div>
+                </div>   
+                <div class="h-screen bg-gray-50">
+                    <div class=" ml-4 mt-5 overflow-y-auto h-32 w-auto grid grid-cols-4 grid-rows-4 justify-between">
+                        <div>
+                            <img src="/src/img/cctv.png" class="border-2 border-transparent duration-300 hover:border-blue-500 cursor-pointer" alt="">
+                        </div>
+                        <div>
+                            <img src="/src/img/cctv.png" class="border-2 border-transparent duration-300 hover:border-blue-500 cursor-pointer" alt="">
+                        </div>
+                        <div>
+                            <img src="/src/img/cctv.png" class="border-2 border-transparent duration-300 hover:border-blue-500 cursor-pointer" alt="">
+                        </div>
+                        <div>
+                            <img src="/src/img/cctv.png" class="border-2 border-transparent duration-300 hover:border-blue-500 cursor-pointer" alt="">
+                        </div>
+                        <div>
+                            <img src="/src/img/cctv.png" class="border-2 border-transparent duration-300 hover:border-blue-500 cursor-pointer" alt="">
+                        </div>
+                        <div>
+                            <img src="/src/img/cctv.png" class="border-2 border-transparent duration-300 hover:border-blue-500 cursor-pointer" alt="">
+                        </div>
+                        <div>
+                            <img src="/src/img/cctv.png" class="border-2 border-transparent duration-300 hover:border-blue-500 cursor-pointer" alt="">
+                        </div>
+                        <div>
+                            <img src="/src/img/cctv.png" class="border-2 border-transparent duration-300 hover:border-blue-500 cursor-pointer" alt="">
+                        </div>
+                        <div>
+                            <img src="/src/img/cctv.png" class="border-2 border-transparent duration-300 hover:border-blue-500 cursor-pointer" alt="">
+                        </div>
+                        <div>
+                            <img src="/src/img/cctv.png" class="border-2 border-transparent duration-300 hover:border-blue-500 cursor-pointer" alt="">
+                        </div>
+                        <div>
+                            <img src="/src/img/cctv.png" class="border-2 border-transparent duration-300 hover:border-blue-500 cursor-pointer" alt="">
+                        </div>
+                        <div>
+                            <img src="/src/img/cctv.png" class="border-2 border-transparent duration-300 hover:border-blue-500 cursor-pointer" alt="">
+                        </div>
+                        <div>
+                            <img src="/src/img/cctv.png" class="border-2 border-transparent duration-300 hover:border-blue-500 cursor-pointer" alt="">
+                        </div>
+                        <div>
+                            <img src="/src/img/cctv.png" class="border-2 border-transparent duration-300 hover:border-blue-500 cursor-pointer" alt="">
+                        </div>
+                        <div>
+                            <img src="/src/img/cctv.png" class="border-2 border-transparent duration-300 hover:border-blue-500 cursor-pointer" alt="">
+                        </div>
+                        <div>
+                            <img src="/src/img/cctv.png" class="border-2 border-transparent duration-300 hover:border-blue-500 cursor-pointer" alt="">
+                        </div>
+                        
+                    </div>
+        
+                    <div class="flex ml-14 mt-4">
+                        <small class="ml-5">Wed Jul 07 2021</small>
+                        <p class="ml-5 text-gray-600 font-semibold">03:14:05 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+            
+        </div>
+    </div>
+
+</body>
+</html>
