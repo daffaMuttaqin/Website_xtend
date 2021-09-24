@@ -4,6 +4,13 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-/* .button {
-    @apply text-sm text-white py-1 px-6 rounded-md;
-} */
+@layer components {
+
+    .btn-blue {
+        @apply bg-blue-500 hover:bg-blue-700 text-white;
+    }
+
+    .btn {
+        @apply bg-gray-800 text-white;
+    }
+}
